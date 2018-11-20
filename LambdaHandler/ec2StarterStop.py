@@ -1,3 +1,9 @@
+# This script start and stop instances that are tagged with the tag lambda and value true.
+# Ensure that your Lmabda Function have the right permissions SNS:Publish, EC2:DescribeInstances, EC2:DescribeRegions, EC2:StartInstances, EC2:StopInstances 
+# The event payload must match the following
+
+# { "status":"start", "phone_number":"123123123123"}
+
 #import logging
 import boto3
 
